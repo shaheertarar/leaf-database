@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background:rgb(220, 220, 220);
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+.header {
+    height:100px;
+    width:100vw;
+    font-size: 20px;
+    line-height: 100px;
+    text-align:center;
+}
+
+.sidebar {
+    background:green;
+    position:absolute;
+    width:30vw;
+    height:100vh;
+    right:0;
+}
+
+.main {
+    width:100vw;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:20px;
+    gap:20px;
+}
+
+.flower-component {
+    position:relative;
+    width:300px;
+    background:rgb(220, 220, 220);
+    border:2px outset #999;
+    padding:20px;
+    vertical-align: top;
+}
+
+.name {
+    font-size:16px;
+    text-align:center;
+    margin:0;
+    margin-bottom: 20px;
+}
+
+.leaf-image{
+    width:60%;
+    display:block;
+    margin:auto;
+}
+
+.flower-component:hover{
+    background:lightgreen;
+    cursor:pointer;
+}
+
+.desc {
+    display:none;
+}
+
+.flower-component:hover .desc{
+    display:block;
+}
